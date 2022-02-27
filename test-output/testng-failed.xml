@@ -3,15 +3,30 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="TESTNG_CHAPTER.Flipkart_TestNGAnnotations">
+        <methods>
+          <include name="dbconnectionbased"/>
+          <include name="AccessLogin"/>
+          <include name="MaximiseURL"/>
+          <include name="OpenBrowser"/>
+          <include name="DeleteCookies"/>
+          <include name="openURL"/>
+          <include name="GetScreenshot"/>
+          <include name="GetCookies"/>
+          <include name="Login"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- TESTNG_CHAPTER.Flipkart_TestNGAnnotations -->
       <class name="TESTNG_CHAPTER.Basic_ProgramTestNG">
         <methods>
           <include name="login"/>
           <include name="getcookies"/>
-          <include name="getscreenshot"/>
           <include name="deletecookies"/>
+          <include name="getscreenshot"/>
           <include name="dbconnectionclosed"/>
           <include name="openbrowser"/>
           <include name="maxbrowser"/>
+          <include name="webpage"/>
           <include name="enterURL"/>
           <include name="close"/>
         </methods>
